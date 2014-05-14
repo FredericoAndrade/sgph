@@ -1,0 +1,72 @@
+.content .container.about {
+  padding: 80px;
+}
+.content .container.about p,
+.content .container.about a {
+  font-size: 20px;
+  line-height: 27px;
+}
+.content .container.about p:first-child:first-letter,
+.content .container.about a:first-child:first-letter {
+  float: left;
+  font-size: 56px;
+  line-height: 52px;
+  padding-top: 2px;
+  padding-right: 8px;
+  padding-left: 1px;
+}
+.content .container.about a {
+  width: 80%;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  margin: auto;
+  display: block;
+  opacity: 1;
+  transition: opacity 0.15s ease-in-out;
+}
+.content .container.about a:hover {
+  opacity: 0.7;
+  transition: opacity 0.15s ease-in-out;
+}
+.content .container.about a:first-of-type {
+  padding-bottom: 20px;
+  margin: 80px auto 20px auto;
+  border-bottom: 1px solid #333;
+}
+.content .container.press {
+  padding-top: 40px;
+}
+.content .container.press a.entry {
+  padding: 40px 80px 0 80px;
+  text-decoration: none;
+  color: #000;
+  display: block;
+  opacity: 1;
+  transition: opacity 0.15s ease-in-out;
+}
+.content .container.press a.entry:hover {
+  opacity: 0.7;
+  transition: opacity 0.15s ease-in-out;
+}
+.content .container.press a.entry h1 {
+  margin: 0 0 20px 0;
+}
+.content .container.press a.entry p {
+  font-size: 14px;
+  margin: 0 0 0 20px;
+}
+.content .container.press a.entry p img {
+  margin-bottom: -7px;
+}
+.content .container.press a.entry p span {
+  float: right;
+  margin-top: 4px;
+}
+.content .container.press a.entry h2 {
+  font-size: 18px;
+  line-height: 28px;
+  margin: 10px 20px 0 20px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 40px;
+}

@@ -1,0 +1,138 @@
+.content .container.film ul,
+.content .container.photography ul {
+  width: 100%;
+  padding: 30px;
+  display: inline-block;
+  margin: 0;
+}
+.content .container.film ul li,
+.content .container.photography ul li {
+  background: #000;
+  width: 100%;
+  float: left;
+  height: 400px;
+  list-style-type: none;
+}
+.content .container.film ul li:hover ul,
+.content .container.photography ul li:hover ul {
+  opacity: 1;
+  transition: opacity 0.1s ease-in-out;
+}
+.content .container.film ul li:not(:last-of-type),
+.content .container.photography ul li:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+.content .container.film ul li a,
+.content .container.photography ul li a {
+  position: absolute;
+  z-index: 10;
+  display: inline-block;
+  height: 400px;
+  width: 100%;
+}
+.content .container.film ul li ul,
+.content .container.photography ul li ul {
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+}
+.content .container.film ul li ul li,
+.content .container.photography ul li ul li {
+  background: transparent;
+  height: initial;
+  display: inline-block;
+  color: #fff;
+}
+.content .container.film ul li#myth,
+.content .container.photography ul li#myth {
+  background-image: url("../images/mythTrailerPicture.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.content .container.film ul li.photo,
+.content .container.photography ul li.photo {
+  background-image: url("../images/My_Sad_Sadistic_Fantasy_Life_Picture.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.content .container.film ul li.photo ul li,
+.content .container.photography ul li.photo ul li {
+  color: #000;
+}
+.content .videos,
+.content .photos {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  cursor: pointer;
+}
+.content .videos .video {
+  width: 90%;
+  height: 90%;
+  margin: 40px auto;
+  background: #333;
+  border-radius: 3px;
+  display: none;
+  cursor: initial;
+  box-shadow: 0 0 30px rgba(0,0,0,0.4);
+}
+.content .videos .video:hover .close {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+.content .videos .video .close {
+  width: 40px;
+  height: 40px;
+  float: right;
+  position: absolute;
+  z-index: 100;
+  right: 3%;
+  top: 4%;
+  background-image: url("../images/close.png");
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.content .photos {
+  display: none;
+}
+.content .photos:hover .close {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+.content .photos .close {
+  width: 40px;
+  height: 40px;
+  float: right;
+  position: absolute;
+  z-index: 100;
+  right: 3%;
+  top: 4%;
+  background-image: url("../images/close.png");
+  background-size: cover;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+.content .photos .navtext {
+  color: #fff;
+  text-decoration: none;
+  text-transform: initial;
+  margin: 0 auto -20 auto;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+.content .photos .slick-slide .photo {
+  max-height: 800px;
+  margin: 4% auto;
+  cursor: initial;
+}
